@@ -95,7 +95,7 @@
         transition: all .3s;
       }
   
-      &:hover {
+      &:hover, &:active {
         .icons {
           opacity: .2;
         }

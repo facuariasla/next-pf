@@ -30,3 +30,6 @@ a {
   font-family: 'GoshaSans';
   src: local('GoshaSans'), url(../public/fonts/GoshaSans/GoshaSans-Regular.otf) format('truetype');
 }
+input,textarea,button{
+  font-family: 'GoshaSans';
+}
