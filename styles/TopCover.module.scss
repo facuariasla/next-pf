@@ -1,0 +1,20 @@
+@import 'variables';
+
+.topcover_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  .topcover_image{
+    h1{
+      font-size: 100px;
+      margin: 0;
+      // transition: all .3s;
+      // &:hover{
+      //   -webkit-text-stroke: .2px #fff; /* width and color */
+      //   color: #000;
+      // }
+    }
+  }
+
+}

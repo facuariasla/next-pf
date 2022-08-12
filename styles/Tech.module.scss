@@ -1,0 +1,111 @@
+@import 'variables';
+
+.technologies_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  @media screen and (max-width: $tablet_width) {
+    padding: 1rem;
+  }
+  .description_container{
+    h1,p{
+      margin: 0;
+    }
+    h1{
+      width: 50%;
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    .description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      .front_back{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        padding: 0 4rem;
+        @media screen and (max-width: $tablet_width) {
+          gap: 1rem;
+          padding: 0 2rem;
+        }
+        @media screen and (max-width: $mobile_width) {
+          gap: 1rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .tech_container {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(12, 60px);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+  
+    @media screen and (max-width: $laptop_width) {
+      grid-template-columns: repeat(6, 60px);
+      gap: 2rem;
+    }
+  
+    @media screen and (max-width: $mobile_width) {
+      grid-template-columns: repeat(4, 60px);
+      gap: 2rem;
+    }
+  
+    @media screen and (max-width: $m_mobile_width) {
+      grid-template-columns: repeat(3, 60px);
+      gap: 2rem;
+    }
+  
+    .tech {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .icons {
+        font-size: 40px;
+        transition: all .3s;
+  
+      }
+  
+      p {
+        position: absolute;
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        /* transition effect. not necessary */
+        transition: all .3s;
+      }
+  
+      &:hover {
+        .icons {
+          opacity: .2;
+        }
+  
+        p {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+

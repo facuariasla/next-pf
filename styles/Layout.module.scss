@@ -1,0 +1,13 @@
+@import "variables";
+
+.layout_container{
+  display: flex;
+  justify-content: center;
+}
+.layout{
+  max-width: $full_width;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(0, 0, 0);
+}

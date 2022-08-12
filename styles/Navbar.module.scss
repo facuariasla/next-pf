@@ -1,0 +1,34 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .nav_logo {
+    .logo_container {
+      width: 80px;
+      height: 70px;
+    }
+  }
+  .menu_container{
+    display: flex;
+    align-items: center;
+    .menu_circle{
+      background-color: #000;
+      width: 50px;
+      height: 50px;
+      border: 15px solid #fff;
+      border-radius: 30px;
+      transition: all .3s;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      &:hover, &:active{
+        background-color: #000;
+        border: 5px solid #fff;
+      }
+    }
+  }
+
+}
