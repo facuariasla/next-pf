@@ -29,17 +29,18 @@ const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
 
+  
   const setSelected = (el: any) => {
     setShowModal(true);
     setSelectedItem(el);
   };
   return (
-    <div className={styles.projects_container}>
+    <div className={styles.projects_container} id='projects'>
       <div>
-        <h1>Projects</h1>
+        <h1>(some) Projects</h1>
       </div>
 
-      <section className={styles.all_projects}>
+      <section className={styles.all_projects} >
         {projects?.map((el: any) => (
           <motion.div key={el.id}>
             <motion.div

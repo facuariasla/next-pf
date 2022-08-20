@@ -11,22 +11,38 @@
       height: 70px;
     }
   }
-  .menu_container{
+
+  .menu_container {
     display: flex;
     align-items: center;
-    .menu_circle{
+
+    .menu_circle {
+      cursor: pointer;
       background-color: #000;
       width: 50px;
       height: 50px;
-      border: 15px solid #fff;
+      // border: 15px solid #fff;
       border-radius: 30px;
       transition: all .3s;
-      display:flex;
+      display: flex;
       align-items: center;
       justify-content: center;
-      &:hover, &:active{
+
+      &:hover,
+      &:active {
         background-color: #000;
-        border: 5px solid #fff;
+        border: red;
+      }
+
+      a {
+        padding: 0 .5rem;
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        transition: all .5s;
+        &:hover, &:active{
+          color: aquamarine;
+        }
       }
     }
   }

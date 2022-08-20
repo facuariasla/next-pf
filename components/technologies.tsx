@@ -6,7 +6,7 @@ const Techonologies = () => {
     <div className={styles.technologies_container}>
       <div className={styles.description_container}>
         <h1>PERN STACK</h1>
-        <p>[PostgreSQL, Express, React, Node]</p>
+        <p>[ PostgreSQL, Express, React, Node ]</p>
         <p>JavaScript/TypeScript</p>
         {/* <div className={styles.description}>
           <div className={styles.front_back}>

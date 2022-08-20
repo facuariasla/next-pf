@@ -117,7 +117,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Crypto Prices - Pooltoogether",
+    title: "Crypto Prices (Pooltoogether)",
     img: img9,
     desc: "Pooltogether challenge. You can 'add' fake money to your account filling a form, and then buy crypto currencies. React Hooks, state management with Zustand, react-hook-form, styled with ChakraUI. ",
     link: "https://2-pooltogether-challenge.vercel.app/#/",
@@ -125,7 +125,7 @@ export const projects = [
   },
   {
     id: 0,
-    title: "Real Estate - Properties",
+    title: "Real Estate Properties",
     img: img0,
     desc: "WebApp that shows properties to rent & buy; you can apply a couple of filters. Created using NextJS, React Hooks, & ChakraUI",
     link: "https://realestate-properties.vercel.app/",
@@ -142,7 +142,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Rock, Paper & Scissors - pvp",
+    title: "Rock, Paper & Scissors [PVP]",
     img: img1,
     desc: "The classic rock, paper and scissors game, but you can play against a friend! Created using VanillaJS/TypeScript, HTML & CSS. Firebase to manipulate and store data, ExpressJS and NodeJS to create the API REST. Stored in Heroku",
     link: "https://des6-2.herokuapp.com",
@@ -150,7 +150,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Rock, Paper & Scissors - Single",
+    title: "Rock, Paper & Scissors [SINGLE]",
     img: img2,
     desc: "The classic rock, paper and scissors game, user vs BOT. Created using VanillaJS/TypeScript, HTML & CSS. Usage of History API Web, sessionStorage & localStorage",    
     link: "https://facuariasla.github.io/8des-m5",
