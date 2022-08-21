@@ -38,10 +38,9 @@ const Navbar: React.FC = () => {
         transition={{ delay: 0.1 }}
       >
         <motion.div className={styles.logo_container}>
-          <Link href='/'>
+          <Link href="/">
             <a>
-            <Image src={logo} width={70} height={70} alt="logo" />
-
+              <Image src={logo} width={70} height={70} alt="logo" />
             </a>
           </Link>
         </motion.div>
