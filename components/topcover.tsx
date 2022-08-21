@@ -7,7 +7,7 @@ const TopCover = () => {
     <div className={styles.topcover_container}>
       <motion.div
         className={styles.topcover_image}
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, color: '#fff' }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.1 }}
       >

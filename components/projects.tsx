@@ -48,7 +48,7 @@ const Projects = () => {
               onClick={() => setSelected(el)}
               className={styles.project}
             >
-              <motion.p>{el.title}</motion.p>
+              <motion.p className={styles.proy_title}>{el.title}</motion.p>
               <motion.p
                 className={styles.details}
               >
