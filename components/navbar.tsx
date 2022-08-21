@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../public/assets/afwhite.png";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.scss";
+import Link from "next/link";
 const { motion } = require("framer-motion");
 
 const Navbar: React.FC = () => {
@@ -18,13 +19,6 @@ const Navbar: React.FC = () => {
     },
     visible: {
       opacity: 1,
-      transition: {
-        // delay de 1s al entrar
-        // delay: 1, 
-        // // se agregan los child, despues del parent
-        // when: 'beforeChildren',
-        // staggerChildren: .5, // (agrega cada child 1 por 1, con delay de .5s)
-      },
     },
   };
   const boxChildVariant = {
@@ -44,9 +38,12 @@ const Navbar: React.FC = () => {
         transition={{ delay: 0.1 }}
       >
         <motion.div className={styles.logo_container}>
-          <motion.a>
+          <Link href='/'>
+            <a>
             <Image src={logo} width={70} height={70} alt="logo" />
-          </motion.a>
+
+            </a>
+          </Link>
         </motion.div>
       </motion.nav>
 

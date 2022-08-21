@@ -1,8 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "../styles/ProjectModal.module.scss";
-import Image from "next/image";
-import { BsEye } from "react-icons/bs";
 
 const backdrop = {
   visible: { opacity: 1 },

@@ -22,11 +22,10 @@ const About = () => {
             Geology (?¿).
             <br />
           </p>
-          <motion.div className={styles.drag_div} drag>
-            <motion.a>
+          <motion.div >
+            <motion.p>
               (╯°□°）╯︵ ┻━┻ <GiMineralPearls />)
-            </motion.a>
-            <p>(drag me)</p>
+            </motion.p>
           </motion.div>
         </div>
         <div>
