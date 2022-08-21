@@ -13,8 +13,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: $s_mobile_width) {
+  @media screen and (max-width: $m_mobile_width) {
     padding: 2rem 1rem; /* Location of the box */
+  }
+  @media screen and (max-width: $s_mobile_width) {
+    padding: 0 .5; /* Location of the box */
   }
 }
 .modal_content{
@@ -31,7 +34,7 @@
   //   max-height: 100vh;
   // }
   @media screen and (max-width: $s_mobile_width) {
-    max-height: 100vh;
+    max-height: 100%;
   }
   h2, p{
     margin: 0;

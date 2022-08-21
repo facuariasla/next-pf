@@ -19,35 +19,39 @@
     .menu_circle {
       cursor: pointer;
       background-color: #000;
-      width: 50px;
-      height: 50px;
+      // width: 50px;
+      // height: 50px;
       // border: 15px solid #fff;
       border-radius: 30px;
       transition: all .3s;
       display: flex;
       align-items: center;
       justify-content: center;
-
+      .menu_content{
+        display: flex;
+        flex-direction: row;
+        a {
+          padding: 0 .5rem;
+          display: inline-block;
+          position: relative;
+          color: #fff;
+          transition: all .5s;
+          font-size: 18px;
+          &:hover, &:active{
+            color: aquamarine;
+          }
+          @media screen and (max-width: $mobile_width) {
+            font-size: 16px;
+          }
+        }
+      }
       &:hover,
       &:active {
         background-color: #000;
         border: red;
       }
 
-      a {
-        padding: 0 .5rem;
-        display: inline-block;
-        position: relative;
-        color: #fff;
-        transition: all .5s;
-        font-size: 18px;
-        &:hover, &:active{
-          color: aquamarine;
-        }
-        @media screen and (max-width: $mobile_width) {
-          font-size: 16px;
-        }
-      }
+
     }
   }
 

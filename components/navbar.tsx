@@ -11,6 +11,30 @@ const Navbar: React.FC = () => {
     // Funcion que evita que al clickear en la card, actue una funcion declarada en el nodo padre
     event.stopPropagation();
   };
+
+  const boxVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        // delay de 1s al entrar
+        // delay: 1, 
+        // // se agregan los child, despues del parent
+        // when: 'beforeChildren',
+        // staggerChildren: .5, // (agrega cada child 1 por 1, con delay de .5s)
+      },
+    },
+  };
+  const boxChildVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
   return (
     <header className={styles.header}>
       <motion.nav
@@ -21,37 +45,31 @@ const Navbar: React.FC = () => {
       >
         <motion.div className={styles.logo_container}>
           <motion.a>
-            <Image src={logo} width={80} height={80} alt="logo" />
+            <Image src={logo} width={70} height={70} alt="logo" />
           </motion.a>
         </motion.div>
       </motion.nav>
+
       <nav className={styles.menu_container}>
         {/* <div className={styles.menu_circle}>
         </div> */}
         <motion.div
           className={styles.menu_circle}
           onClick={() => setActiveMenu(!activeMenu)}
-          animate={{
-            width: activeMenu ? "210px" : "50px",
-            border: activeMenu ? "5px solid white" : "15px solid #fff",
-            borderTopRightRadius: activeMenu ? "10px" : "30px",
-          }}
-          transition={{ delay: 0.1 }}
+          variants={boxVariant}
+          animate="visible"
+          initial="hidden"
 
           // transition={{ delay: 1 }}
         >
           <motion.div
-            clasName={styles.menu_content}
+            className={styles.menu_content}
             onClick={(event: any) => childAction(event)}
-            animate={{ opacity: activeMenu ? 1 : 0 }}
+            variants={boxChildVariant}
             // transition={{ delay: .5}}
           >
-            {activeMenu && (
-              <div style={{ display: "flex" }}>
-                <motion.a href="#projects">PROJECTS</motion.a>
-                <motion.a href="#contact">CONTACT</motion.a>
-              </div>
-            )}
+            <motion.a href="#projects">PROJECTS</motion.a>
+            <motion.a href="#contact">CONTACT</motion.a>
           </motion.div>
         </motion.div>
       </nav>
