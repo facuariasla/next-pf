@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../public/assets/afwhitesvg.svg";
+import logo from "../public/assets/afwhite.png";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.scss";
 const { motion } = require("framer-motion");
