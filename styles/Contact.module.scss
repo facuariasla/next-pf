@@ -24,11 +24,20 @@
       input{
         border-style:none;
         border-image: none;
+        outline:none ;
         width: 100%;
         height: 50px;
         font-size: 16px;
         padding: 0 10px;
         letter-spacing: 1px;
+        transition: all .3s;
+        background-color: rgba(255, 255, 255, 0.069);
+        border: 1px solid #fff;
+        color: #fff;
+        &:focus{
+          background-color: #000;
+          border-radius: 10px;
+        }
       }
     }
     .message_container{
@@ -43,28 +52,32 @@
         resize: none;
         font-size: 16px;
         padding: 10px;
-
+        border: none;
+        outline: none;
+        transition: all .3s;
+        background-color: rgba(255, 255, 255, 0.069);
+        border: 1px solid #fff;
+        color: #fff;
+        &:focus{
+          background-color: #000;
+          border-radius: 10px;
+        }
       }
     }
     .button_container{
       padding-top: .5rem;
-      div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        color: #000;
-        border-radius: 20px;
+      button{
+        height: 50px;
         width: 100%;
-        height: 40px;
-        cursor: pointer;
         font-size: 18px;
-        transition: all .5s;
-        &:hover, &:active{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.069);
+        color: #fff;
+        border: 2px solid #fff;
+        transition: all .3s;
+        &:hover, &:focus{
           background-color: #000;
-          color: #fff;   
-          border: 1px solid #fff;   
-          border-radius: 0px;
+          border-radius: 10px;
         }
       }
     }
