@@ -1,10 +1,19 @@
 import { useState } from "react";
+// import { sendMail } from "../lib/sendgrid";
 import styles from "../styles/Contact.module.scss";
 const Contact = () => {
   const [userData, setUserData] = useState<any>();
 
-  const handleForm = () => {
+  const handleForm = async (e:any) => {
+    e.preventDefault();
     console.log(userData);
+    // const sending = await sendMail({
+    //   to: 'facundolautaroarias@hotmail.com',
+    //   from: userData.email,
+    //   subject: "Portfolio Message - facuariasla",
+    //   html: userData.message,
+    // });
+    // console.log(sending)
   };
 
   return (
