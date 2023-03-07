@@ -25,6 +25,7 @@ const Contact = () => {
         <div className={styles.email_container}>
           <label htmlFor="email">your email</label>
           <input
+          disabled
             name="email"
             id="email"
             type="email"
@@ -41,6 +42,7 @@ const Contact = () => {
         <div className={styles.message_container}>
           <label htmlFor="message">message</label>
           <textarea
+          disabled
             name="message"
             id="message"
             maxLength={1000}
@@ -54,7 +56,7 @@ const Contact = () => {
           />
         </div>
         <div className={styles.button_container}>
-          <button type='submit'>send</button>
+          <button type='submit' disabled>send</button>
         </div>
       </form>
     </section>
