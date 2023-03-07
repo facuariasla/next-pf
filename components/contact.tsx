@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import { sendMail } from "../lib/sendgrid";
 import styles from "../styles/Contact.module.scss";
+import Social from "./social";
 const Contact = () => {
   const [userData, setUserData] = useState<any>();
 
@@ -19,6 +20,7 @@ const Contact = () => {
   return (
     <section className={styles.contact_container} id="contact">
       <h1>Contact</h1>
+      <Social/>
       <form className={styles.form_class} onSubmit={handleForm} autoComplete='off'>
         <div className={styles.email_container}>
           <label htmlFor="email">your email</label>

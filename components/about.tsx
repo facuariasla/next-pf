@@ -17,11 +17,14 @@ const About = () => {
       <div className={styles.about_description}>
         <div>
           {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum dolores, vero eveniet architecto exercitationem? Impedit, ipsam voluptas ipsum quo, numquam error dignissimos atque sunt ex perferendis, odio voluptatibus iusto?</p> */}
-          <p>
-            27 y/o Frontend Developer, with knowledge in backend (NodeJS), and
-            Geology (?¿).
-            <br />
-          </p>
+
+          <p>28 y/o Fullstack Developer, with experiencie in</p>
+          <p>Backend with <strong>Node</strong></p>
+          <p>Web with <strong>React/Next & ~Vue2</strong></p>
+          <p>Mobile with <strong>Flutter</strong></p>
+          <p>Geology (?¿).</p>
+
+
           <motion.div >
             <motion.p>
               (╯°□°）╯︵ ┻━┻ <GiMineralPearls />)
@@ -31,8 +34,7 @@ const About = () => {
         <div>
           <p>From Neuquén, Argentina.</p>
           <p>
-            Trying to expand my knowledge about design and animations in
-            JavaScript.
+            Trying to expand my knowledge about design, product, and learn more about the IA and Web{">"}2.
           </p>
           <p>
             Analog photography, and a couple of games (EA & Real Life (?)) as a

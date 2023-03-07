@@ -12,19 +12,25 @@ import {
   SiFirebase,
   SiPostgresql,
   SiSequelize,
+  SiFlutter,
+  SiVuedotjs,
+  SiTailwindcss,
+  // Social Media:
+  SiLinkedin,
+  SiGithub,
 } from "react-icons/si";
 
-import img1 from './public/assets/proyect-screens/rps-pvp.png'
-import img2 from './public/assets/proyect-screens/rps-single.png'
-import img3 from './public/assets/proyect-screens/cryptoinfo.png'
-import img4 from './public/assets/proyect-screens/yugioh.png'
-import img5 from './public/assets/proyect-screens/LandingPage2.png'
-import img0 from './public/assets/proyect-screens/realestate.png'
-import img6 from './public/assets/proyect-screens/icon-poke.png'
-import img7 from './public/assets/proyect-screens/lost-pets.png'
-import img8 from './public/assets/proyect-screens/movie-finder.png'
-import img9 from './public/assets/proyect-screens/pooltogether.png'
-import img10 from './public/assets/proyect-screens/basement.png'
+import img1 from "./public/assets/proyect-screens/rps-pvp.png";
+import img2 from "./public/assets/proyect-screens/rps-single.png";
+import img3 from "./public/assets/proyect-screens/cryptoinfo.png";
+import img4 from "./public/assets/proyect-screens/yugioh.png";
+import img5 from "./public/assets/proyect-screens/LandingPage2.png";
+import img0 from "./public/assets/proyect-screens/realestate.png";
+import img6 from "./public/assets/proyect-screens/icon-poke.png";
+import img7 from "./public/assets/proyect-screens/lost-pets.png";
+import img8 from "./public/assets/proyect-screens/movie-finder.png";
+import img9 from "./public/assets/proyect-screens/pooltogether.png";
+import img10 from "./public/assets/proyect-screens/basement.png";
 
 export const techdata = [
   {
@@ -51,6 +57,11 @@ export const techdata = [
     id: 5,
     icon: SiCss3,
     title: "CSS3",
+  },
+  {
+    id: 5.5,
+    icon: SiTailwindcss,
+    title: "Tailwind",
   },
   {
     id: 6,
@@ -87,6 +98,16 @@ export const techdata = [
     id: 12,
     icon: SiSequelize,
     title: "Sequelize",
+  },
+  {
+    id: 13,
+    icon: SiFlutter,
+    title: "Flutter",
+  },
+  {
+    id: 14,
+    icon: SiVuedotjs,
+    title: "Vue",
   },
 ];
 
@@ -152,7 +173,7 @@ export const projects = [
     id: 2,
     title: "Rock, Paper & Scissors [SINGLE]",
     img: img2,
-    desc: "The classic rock, paper and scissors game, user vs BOT. Created using VanillaJS/TypeScript, HTML & CSS. Usage of History API Web, sessionStorage & localStorage",    
+    desc: "The classic rock, paper and scissors game, user vs BOT. Created using VanillaJS/TypeScript, HTML & CSS. Usage of History API Web, sessionStorage & localStorage",
     link: "https://facuariasla.github.io/8des-m5",
     repo: "https://github.com/facuariasla/8des-m5",
   },
@@ -180,5 +201,20 @@ export const projects = [
   //   link: "https://62543e5b0e435b7f891a0ce1--stellar-profiterole-99e7c9.netlify.app",
   //   repo: "https://github.com/facuariasla/landing-page-react",
   // },
+];
 
+export const social = [
+  {
+    id: 1,
+    icon: SiLinkedin,
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/facuariasla/"
+  },
+  {
+    id: 2,
+    icon: SiGithub,
+    title: "GitHub",
+    link: "https://github.com/facuariasla"
+
+  },
 ];
