@@ -1,0 +1,41 @@
+@import "variables";
+
+.social_container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icons {
+      font-size: 20px;
+      transition: all 0.3s;
+    }
+
+    p {
+      position: absolute;
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      visibility: hidden;
+      opacity: 0;
+      /* transition effect. not necessary */
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      .icons {
+        opacity: 0.2;
+      }
+
+      p {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
