@@ -9,26 +9,26 @@ const Contact = () => {
 
   const [mailMessage, setMailMessage] = useState<string>('');
 
-  const handleForm = async (e:any) => {
+  const handleForm = async (e: any) => {
 
     e.preventDefault();
     console.log(userData);
     setMailError(false);
-    setMailMessage('');
+    setMailMessage('Sending message...');
     const response = await fetch('/api/email', {
       method: "POST",
-      body: JSON.stringify({userData}),
+      body: JSON.stringify({ userData }),
       headers: {
-        "Content-Type":"application/json",
+        "Content-Type": "application/json",
       },
     },)
     const data = await response.json();
-    if(data.status !=='ok'){
+    if (data.status !== 'ok') {
       setMailError(true);
-      setMailMessage('Algo salio mal, intentalo más tarde (o comunicate via LinkedIn 👀)');
+      setMailMessage('Something went wrong, try again later (or check social 👆)');
     } else {
       setMailError(false);
-      setMailMessage('Mensaje enviado!');
+      setMailMessage('Message sent successfully');
     }
     console.log(mailMessage);
   };
@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <section className={styles.contact_container} id="contact">
       <h1>Contact</h1>
-      <Social/>
+      <Social />
       <form className={styles.form_class} onSubmit={handleForm} autoComplete='off'>
         <div className={styles.email_container}>
           <label htmlFor="email">your email</label>
@@ -73,7 +73,10 @@ const Contact = () => {
           <button type='submit'>send</button>
         </div>
         <div className={styles.message_container}>
-          <p className={mailError? styles.failed:''}>{mailMessage}</p>
+          {
+            mailError ? <p className={styles.failed}>{mailMessage}</p>
+              : <p className={styles.success}>{mailMessage}</p>
+          }
         </div>
       </form>
     </section>
