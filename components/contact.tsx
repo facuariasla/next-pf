@@ -1,20 +1,36 @@
 import { useState } from "react";
-// import { sendMail } from "../lib/sendgrid";
 import styles from "../styles/Contact.module.scss";
 import Social from "./social";
+import Router from "next/router"
 const Contact = () => {
   const [userData, setUserData] = useState<any>();
+  const [mailError, setMailError] = useState<boolean>(false);
+  const [mailSended, setMailSended] = useState<boolean>(false);
+
+  const [mailMessage, setMailMessage] = useState<string>('');
 
   const handleForm = async (e:any) => {
+
     e.preventDefault();
     console.log(userData);
-    // const sending = await sendMail({
-    //   to: 'facundolautaroarias@hotmail.com',
-    //   from: userData.email,
-    //   subject: "Portfolio Message - facuariasla",
-    //   html: userData.message,
-    // });
-    // console.log(sending)
+    setMailError(false);
+    setMailMessage('');
+    const response = await fetch('/api/email', {
+      method: "POST",
+      body: JSON.stringify({userData}),
+      headers: {
+        "Content-Type":"application/json",
+      },
+    },)
+    const data = await response.json();
+    if(data.status !=='ok'){
+      setMailError(true);
+      setMailMessage('Algo salio mal, intentalo más tarde (o comunicate via LinkedIn 👀)');
+    } else {
+      setMailError(false);
+      setMailMessage('Mensaje enviado!');
+    }
+    console.log(mailMessage);
   };
 
   return (
@@ -25,7 +41,6 @@ const Contact = () => {
         <div className={styles.email_container}>
           <label htmlFor="email">your email</label>
           <input
-          disabled
             name="email"
             id="email"
             type="email"
@@ -42,7 +57,6 @@ const Contact = () => {
         <div className={styles.message_container}>
           <label htmlFor="message">message</label>
           <textarea
-          disabled
             name="message"
             id="message"
             maxLength={1000}
@@ -56,7 +70,10 @@ const Contact = () => {
           />
         </div>
         <div className={styles.button_container}>
-          <button type='submit' disabled>send</button>
+          <button type='submit'>send</button>
+        </div>
+        <div className={styles.message_container}>
+          <p className={mailError? styles.failed:''}>{mailMessage}</p>
         </div>
       </form>
     </section>
