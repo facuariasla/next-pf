@@ -22,19 +22,22 @@ const About = () => {
           <p>Backend with <strong>Node</strong></p>
           <p>Web with <strong>React/Next & ~Vue2</strong></p>
           <p>Mobile with <strong>Flutter</strong></p>
-          <p>Geology (?¿).</p>
+          {/* <p>I was a Geology (?¿) student.</p> */}
 
 
-          <motion.div >
+          {/* <motion.div >
             <motion.p>
               (╯°□°）╯︵ ┻━┻ <GiMineralPearls />)
             </motion.p>
-          </motion.div>
+          </motion.div> */}
         </div>
         <div>
           <p>From Neuquén, Argentina.</p>
-          <p>
+          {/* <p>
             Trying to expand my knowledge about design, product, and learn more about the IA and Web{">"}2.
+          </p> */}
+          <p>
+            Learning more about IA and Web{">"}2
           </p>
           <p>
             Analog photography, and a couple of games (EA & Real Life (?)) as a

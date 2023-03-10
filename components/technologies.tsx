@@ -8,6 +8,8 @@ const Techonologies = () => {
         <h1>PERN STACK</h1>
         <p>[ PostgreSQL, Express, React, Node ]</p>
         <p>JavaScript/TypeScript</p>
+        <h3>& more</h3>
+
         {/* <div className={styles.description}>
           <div className={styles.front_back}>
             <div>
