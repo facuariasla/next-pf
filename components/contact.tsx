@@ -2,19 +2,19 @@ import { useState } from "react";
 import styles from "../styles/Contact.module.scss";
 import Social from "./social";
 import Router from "next/router"
+import Spinner from "./spinner";
 const Contact = () => {
   const [userData, setUserData] = useState<any>();
   const [mailError, setMailError] = useState<boolean>(false);
-  const [mailSended, setMailSended] = useState<boolean>(false);
-
   const [mailMessage, setMailMessage] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(true);
 
   const handleForm = async (e: any) => {
-
     e.preventDefault();
     console.log(userData);
     setMailError(false);
-    setMailMessage('Sending message...');
+    setLoading(true);
+    // setMailMessage('Sending message...');
     const response = await fetch('/api/email', {
       method: "POST",
       body: JSON.stringify({ userData }),
@@ -30,6 +30,7 @@ const Contact = () => {
       setMailError(false);
       setMailMessage('Message sent successfully');
     }
+    setLoading(false);
     console.log(mailMessage);
   };
 
@@ -69,8 +70,14 @@ const Contact = () => {
             }
           />
         </div>
-        <div className={styles.button_container}>
+
+        {/* <div className={styles.button_container}>
           <button type='submit'>send</button>
+        </div> */}
+        <div className={styles.button_container}>
+          {loading ? <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Spinner />
+          </div> : <button type='submit'>send</button>}
         </div>
         <div className={styles.message_container}>
           {
@@ -78,6 +85,7 @@ const Contact = () => {
               : <p className={styles.success}>{mailMessage}</p>
           }
         </div>
+
       </form>
     </section>
   );

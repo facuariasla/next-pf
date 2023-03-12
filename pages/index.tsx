@@ -3,6 +3,7 @@ import Head from "next/head";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Projects from "../components/projects";
+import Spinner from "../components/spinner";
 import Techonologies from "../components/technologies";
 import TopCover from "../components/topcover";
 
