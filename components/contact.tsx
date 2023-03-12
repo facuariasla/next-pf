@@ -7,7 +7,7 @@ const Contact = () => {
   const [userData, setUserData] = useState<any>();
   const [mailError, setMailError] = useState<boolean>(false);
   const [mailMessage, setMailMessage] = useState<string>('');
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleForm = async (e: any) => {
     e.preventDefault();
