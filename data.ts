@@ -31,6 +31,7 @@ import img7 from "./public/assets/proyect-screens/lost-pets.png";
 import img8 from "./public/assets/proyect-screens/movie-finder.png";
 import img9 from "./public/assets/proyect-screens/pooltogether.png";
 import img10 from "./public/assets/proyect-screens/basement.png";
+import img11 from "./public/assets/proyect-screens/pokemon_gengar.png";
 
 export const techdata = [
   {
@@ -129,6 +130,14 @@ export const projects = [
     repo: "https://github.com/facuariasla/basement-ch-two",
   },
   {
+    id: 10.5,
+    title: "Poke Info",
+    img: img11,
+    desc: "The classic (and simple) Pokémon search engine. Where I put into practice some knowledge of React TypeScript and Tailwind. pokeapi.co was used in this project.",
+    link: "https://pokepoke-ten.vercel.app/",
+    repo: "https://github.com/facuariasla/poke-tailwind",
+  },
+  {
     id: 8,
     title: "Movie Finder",
     img: img8,
@@ -208,13 +217,12 @@ export const social = [
     id: 1,
     icon: SiLinkedin,
     title: "LinkedIn",
-    link: "https://www.linkedin.com/in/facuariasla/"
+    link: "https://www.linkedin.com/in/facuariasla/",
   },
   {
     id: 2,
     icon: SiGithub,
     title: "GitHub",
-    link: "https://github.com/facuariasla"
-
+    link: "https://github.com/facuariasla",
   },
 ];
