@@ -5,7 +5,7 @@ const Techonologies = () => {
   return (
     <div className={styles.technologies_container}>
       <div className={styles.description_container}>
-        <h1>PERN STACK</h1>
+        <h1>TECH STACK</h1>
         <p>[ PostgreSQL, Express, React, Node ]</p>
         <p>JavaScript/TypeScript</p>
         <h3>& more</h3>

@@ -19,11 +19,16 @@ const About = () => {
           {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum dolores, vero eveniet architecto exercitationem? Impedit, ipsam voluptas ipsum quo, numquam error dignissimos atque sunt ex perferendis, odio voluptatibus iusto?</p> */}
 
           <p>28 y/o Fullstack Developer, with experiencie on</p>
-          <p>Backend with <strong>Node</strong></p>
-          <p>Web with <strong>React/Next & ~Vue2</strong></p>
-          <p>Mobile with <strong>Flutter</strong></p>
+          <p>
+            Backend with <strong>Node</strong>
+          </p>
+          <p>
+            Web with <strong>React/Next & ~Vue2</strong>
+          </p>
+          <p>
+            Mobile with <strong>Flutter</strong>
+          </p>
           {/* <p>I was a Geology (?¿) student.</p> */}
-
 
           {/* <motion.div >
             <motion.p>
@@ -36,9 +41,11 @@ const About = () => {
           {/* <p>
             Trying to expand my knowledge about design, product, and learn more about the IA and Web{">"}2.
           </p> */}
+          <p>I started writing code at the beginning of 2021</p>
           <p>
-            Learning more about IA and Web{">"}2
+            & I started working as a fullstack developer at the beginning of 2022
           </p>
+          <p>Learning more about IA and Web {">"} 2</p>
           <p>
             Analog photography, and a couple of games (EA & Real Life (?)) as a
             hobby.
@@ -49,7 +56,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
     </motion.div>
   );
 };

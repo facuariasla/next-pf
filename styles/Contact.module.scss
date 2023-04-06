@@ -45,6 +45,9 @@
       flex-direction: column;
       gap: 5px;
       font-size: 18px;
+      label{
+        align-self: flex-start;
+      }
       textarea{
         border-style:none;
         width: 100%;
