@@ -43,7 +43,19 @@ const About = () => {
           </p> */}
           <p>I started writing code at the beginning of 2021</p>
           <p>
-            & I started working as a fullstack developer at the beginning of 2022
+            & I started working as a fullstack developer at the beginning of
+            2022.
+          </p>
+          <p>
+            Currently workin at{" "}
+            <a
+              href="https://pawer.cl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pawer
+            </a>
+            .
           </p>
           <p>Learning more about IA and Web {">"} 2</p>
           <p>
