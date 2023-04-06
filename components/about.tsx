@@ -47,7 +47,7 @@ const About = () => {
             2022.
           </p>
           <p>
-            Currently workin at{" "}
+            Currently working at{" "}
             <a
               href="https://pawer.cl/"
               target="_blank"
