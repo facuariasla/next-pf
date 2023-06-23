@@ -45,12 +45,22 @@ const ProjectModal = ({ showModal, setShowModal, cardData }: any) => {
                 <p>{cardData?.desc}</p>
               </div>
               <div className={styles.links}>
+                {cardData?.linkedinPost ? (
+                  <a
+                    href={cardData?.linkedinPost}
+                    target="_blank"
+                    rel={"noreferrer"}
+                  >
+                    Post →
+                  </a>
+                ) : (
+                  ""
+                )}
                 <a href={cardData?.link} target="_blank" rel={"noreferrer"}>
-                👁 Check the page!  →
+                  👁 Check the page! →
                 </a>
                 <a href={cardData?.repo} target="_blank" rel={"noreferrer"}>
                   GitHub repository (code details) →
-                  
                 </a>
               </div>
             </div>

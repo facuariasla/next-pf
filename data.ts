@@ -120,6 +120,8 @@ export const projects = [
     desc: "WebApp that helps people find their pets, using location with Mapbox. People can see the lost pets around them, and report them with the owner. Technologies: TypeScript, ReactJS & ChakraUI. MapBox and SendGrid. Backend with PostgreSQL - Sequelize and Algolia. ",
     link: "https://mascotasperdidas-iota.vercel.app/",
     repo: "https://github.com/facuariasla/lost-pets-vite",
+    linkedinPost:
+      "https://www.linkedin.com/feed/update/urn:li:activity:6946167136109105152/",
   },
   {
     id: 10,
@@ -128,6 +130,7 @@ export const projects = [
     desc: "Frontend challenge from basement.studio. State management with Zustand in NextJS, styled with Sass and Framer-motion",
     link: "https://basement-ch.vercel.app/",
     repo: "https://github.com/facuariasla/basement-ch-two",
+    linkedinPost: 'https://www.linkedin.com/posts/facuariasla_landing-page-de-un-e-commerce-desafio-de-activity-6960359859229741056-aik4?utm_source=share&utm_medium=member_desktop',
   },
   {
     id: 10.5,
@@ -136,6 +139,7 @@ export const projects = [
     desc: "The classic (and simple) Pokémon search engine. Where I put into practice some knowledge of React TypeScript and Tailwind. pokeapi.co was used in this project.",
     link: "https://pokepoke-ten.vercel.app/",
     repo: "https://github.com/facuariasla/poke-tailwind",
+    linkedinPost: null,
   },
   {
     id: 8,
@@ -144,6 +148,7 @@ export const projects = [
     desc: "You can search movies, and see the details of each movie. Searching by filters as a year of release or/and series, episode, movie. Created with React Hooks, TypeScript, Styled-Components & AntDesign. API: omdbapi.com",
     link: "https://moviefinder-ch.vercel.app/",
     repo: "https://github.com/facuariasla/moviefinder-ch",
+    linkedinPost: null,
   },
   {
     id: 9,
@@ -152,6 +157,7 @@ export const projects = [
     desc: "Pooltogether challenge. You can 'add' fake money to your account filling a form, and then buy crypto currencies. React Hooks, state management with Zustand, react-hook-form, styled with ChakraUI. ",
     link: "https://2-pooltogether-challenge.vercel.app/#/",
     repo: "https://github.com/facuariasla/2-pooltogether-challenge",
+    linkedinPost: null,
   },
   {
     id: 0,
@@ -160,6 +166,7 @@ export const projects = [
     desc: "WebApp that shows properties to rent & buy; you can apply a couple of filters. Created using NextJS, React Hooks, & ChakraUI",
     link: "https://realestate-properties.vercel.app/",
     repo: "https://github.com/facuariasla/realestate-properties",
+    linkedinPost: null,
   },
 
   {
@@ -169,6 +176,7 @@ export const projects = [
     desc: "Application where you can see the flow of different cryptocurrencies over time, in a graph. Created using React Hooks, CoinGeko API, Axios, and react-chartjs-2",
     link: "https://cryptodata001.netlify.app",
     repo: "https://github.com/facuariasla/crypto-info",
+    linkedinPost: null,
   },
   {
     id: 1,
@@ -177,6 +185,7 @@ export const projects = [
     desc: "The classic rock, paper and scissors game, but you can play against a friend! Created using VanillaJS/TypeScript, HTML & CSS. Firebase to manipulate and store data, ExpressJS and NodeJS to create the API REST. Stored in Heroku",
     link: "https://des6-2.herokuapp.com",
     repo: "https://github.com/facuariasla/des6-2",
+    linkedinPost: null,
   },
   {
     id: 2,
@@ -185,6 +194,7 @@ export const projects = [
     desc: "The classic rock, paper and scissors game, user vs BOT. Created using VanillaJS/TypeScript, HTML & CSS. Usage of History API Web, sessionStorage & localStorage",
     link: "https://facuariasla.github.io/8des-m5",
     repo: "https://github.com/facuariasla/8des-m5",
+    linkedinPost: null,
   },
   {
     id: 6,
@@ -193,6 +203,7 @@ export const projects = [
     desc: "Who's that Pokemon!?. Created using React Hooks in Vite project, some CSS styles, and Piskel. Credits: goncypozzo challenges. Components from https://nostalgic-css.github.io/NES.css/  ",
     link: "https://pokemon-who.vercel.app/",
     repo: "https://github.com/facuariasla/pokemon-who",
+    linkedinPost: null,
   },
   // {
   //   id: 4,
