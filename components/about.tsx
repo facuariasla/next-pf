@@ -41,10 +41,7 @@ const About = () => {
           {/* <p>
             Trying to expand my knowledge about design, product, and learn more about the IA and Web{">"}2.
           </p> */}
-          <p>
-            I started writing code at the beginning of 2021 & started working as
-            a fullstack developer at the beginning of 2022.
-          </p>
+          <p>Coding since 2020</p>
           <p>
             Currently working at{" "}
             <a
