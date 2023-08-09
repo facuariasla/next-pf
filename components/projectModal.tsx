@@ -56,9 +56,14 @@ const ProjectModal = ({ showModal, setShowModal, cardData }: any) => {
                 ) : (
                   ""
                 )}
-                <a href={cardData?.link} target="_blank" rel={"noreferrer"}>
-                  👁 Check the page! →
-                </a>
+                {cardData.isWorking === true ? (
+                  <a href={cardData?.link} target="_blank" rel={"noreferrer"}>
+                    👁 Check the page! →
+                  </a>
+                ) : (
+                  <p>
+                  </p>
+                )}
                 <a href={cardData?.repo} target="_blank" rel={"noreferrer"}>
                   GitHub repository (code details) →
                 </a>

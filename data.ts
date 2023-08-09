@@ -122,6 +122,7 @@ export const projects = [
     repo: "https://github.com/facuariasla/lost-pets-vite",
     linkedinPost:
       "https://www.linkedin.com/feed/update/urn:li:activity:6946167136109105152/",
+    isWorking: false,
   },
   {
     id: 10,
@@ -130,7 +131,9 @@ export const projects = [
     desc: "Frontend challenge from basement.studio. State management with Zustand in NextJS, styled with Sass and Framer-motion",
     link: "https://basement-ch.vercel.app/",
     repo: "https://github.com/facuariasla/basement-ch-two",
-    linkedinPost: 'https://www.linkedin.com/posts/facuariasla_landing-page-de-un-e-commerce-desafio-de-activity-6960359859229741056-aik4?utm_source=share&utm_medium=member_desktop',
+    linkedinPost:
+      "https://www.linkedin.com/posts/facuariasla_landing-page-de-un-e-commerce-desafio-de-activity-6960359859229741056-aik4?utm_source=share&utm_medium=member_desktop",
+    isWorking: true,
   },
   {
     id: 10.5,
@@ -140,6 +143,7 @@ export const projects = [
     link: "https://pokepoke-ten.vercel.app/",
     repo: "https://github.com/facuariasla/poke-tailwind",
     linkedinPost: null,
+    isWorking: true,
   },
   {
     id: 8,
@@ -149,6 +153,7 @@ export const projects = [
     link: "https://moviefinder-ch.vercel.app/",
     repo: "https://github.com/facuariasla/moviefinder-ch",
     linkedinPost: null,
+    isWorking: true,
   },
   {
     id: 9,
@@ -158,6 +163,7 @@ export const projects = [
     link: "https://2-pooltogether-challenge.vercel.app/#/",
     repo: "https://github.com/facuariasla/2-pooltogether-challenge",
     linkedinPost: null,
+    isWorking: true,
   },
   {
     id: 0,
@@ -167,6 +173,7 @@ export const projects = [
     link: "https://realestate-properties.vercel.app/",
     repo: "https://github.com/facuariasla/realestate-properties",
     linkedinPost: null,
+    isWorking: true,
   },
 
   {
@@ -177,6 +184,7 @@ export const projects = [
     link: "https://cryptodata001.netlify.app",
     repo: "https://github.com/facuariasla/crypto-info",
     linkedinPost: null,
+    isWorking: true,
   },
   {
     id: 1,
@@ -186,6 +194,7 @@ export const projects = [
     link: "https://des6-2.herokuapp.com",
     repo: "https://github.com/facuariasla/des6-2",
     linkedinPost: null,
+    isWorking: false,
   },
   {
     id: 2,
@@ -195,6 +204,7 @@ export const projects = [
     link: "https://facuariasla.github.io/8des-m5",
     repo: "https://github.com/facuariasla/8des-m5",
     linkedinPost: null,
+    isWorking: false,
   },
   {
     id: 6,
@@ -204,6 +214,7 @@ export const projects = [
     link: "https://pokemon-who.vercel.app/",
     repo: "https://github.com/facuariasla/pokemon-who",
     linkedinPost: null,
+    isWorking: true,
   },
   // {
   //   id: 4,
